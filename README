@@ -1,0 +1,9 @@
+I wrote this tool to allow me to burn ISOs in Vista. The problem was I had a clean install and Nero wouldn't work. The free tools out on the internet were either limited (by size of iso they could write) or would install other crap I didn't want.
+
+This was written for Vista only (based on builds 5600 and 5728) using C# in the .NET Framework 2. It uses the IMAPI 2 COM objects to do the work. It did the job for me, your mileage may vary--particularly since it's only ever been tested on one configuration: mine. So if it doesn't work for you, let me know, I might fix it. But I'm not responsible if it hoses your machine. I'm putting it up here more for the code for others than anything else.
+
+Quick note on limitations: There's no warranty expressed or implied. If it fucks up your machine, too bad. Use this only in Vista--I have no idea what will happen in any other OS. You can do whatever you like with the source except please don't use it to intentionally damage the PCs of others. Finally, if you do use it, please mention my name.
+
+Finally, some compatibility notes: 
+* Don't run windows media player in the background while using this utility. It prevents the tool from getting a lock to the drive to prevent competition by other applications. I've sent a bug to Microsoft on this already. 
+* If you look at the source code you will notice that Update is implemented but isn't generating updates. I don't know why. I have a thread on the MSDN forums inquiring about it.  The thread is at: http://social.msdn.microsoft.com/Forums/en-US/windowsopticalplatform/thread/92a8337e-34e2-4696-9dcd-900910d88178
